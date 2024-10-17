@@ -1,0 +1,626 @@
+
+
+============================== 09:44:56.467897 | 84d856c3-bc2b-46d8-8fb4-cfa46ec91436 ==============================
+[0m09:44:56.467897 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:44:56.471714 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/workspaces/dlt-freshdesk-schema-mapping/dbt_freshdesk_pipeline/logs', 'profiles_dir': '/home/codespace/.python/current/lib/python3.12/site-packages/dlt/helpers/dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'True', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt ', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m09:44:56.472346 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m09:44:56.612458 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:44:56.613471 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m09:44:56.616963 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.22720675, "process_user_time": 2.19566, "process_kernel_time": 0.247263, "process_mem_max_rss": "206336", "process_in_blocks": "13752", "process_out_blocks": "8"}
+[0m09:44:56.618013 [debug] [MainThread]: Command `cli deps` succeeded at 09:44:56.617849 after 0.23 seconds
+[0m09:44:56.618823 [debug] [MainThread]: Flushing usage events
+
+
+============================== 09:44:59.184193 | 3527ae78-80ed-4c4a-ad5b-84d472a182b4 ==============================
+[0m09:44:59.184193 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:44:59.186530 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/codespace/.python/current/lib/python3.12/site-packages/dlt/helpers/dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/workspaces/dlt-freshdesk-schema-mapping/dbt_freshdesk_pipeline/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'True', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m09:44:59.187101 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m09:44:59.815414 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m09:44:59.831590 [debug] [MainThread]: checksum: ce791e2c4dd4719b836612a6894dd3617c68830a344dbf2c146c7bcf853cc43d, vars: {'destination_dataset_name': 'freshdesk_data_transformed',
+ 'source_dataset_name': 'freshdesk_data'}, profile: bigquery, target: , version: 1.8.7
+[0m09:44:59.833097 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:45:01.041881 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m09:45:01.046836 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name '_dlt_loads' in the 'models' section of file 'models/sources.yml'
+[0m09:45:01.054821 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'agents' in the 'models' section of file 'models/sources.yml'
+[0m09:45:01.057397 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'companies' in the 'models' section of file 'models/sources.yml'
+[0m09:45:01.062705 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'contacts' in the 'models' section of file 'models/sources.yml'
+[0m09:45:01.066831 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'groups' in the 'models' section of file 'models/sources.yml'
+[0m09:45:01.068954 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'roles' in the 'models' section of file 'models/sources.yml'
+[0m09:45:01.075143 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'tickets' in the 'models' section of file 'models/sources.yml'
+[0m09:45:01.077804 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'companies__domains' in the 'models' section of file 'models/sources.yml'
+[0m09:45:01.430322 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null__dlt_loads_load_id.aced3f4300' (models/sources.yml) depends on a node named '_dlt_loads' in package '' which was not found
+[0m09:45:01.433965 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null__dlt_loads_status.231190b63d' (models/sources.yml) depends on a node named '_dlt_loads' in package '' which was not found
+[0m09:45:01.434809 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null__dlt_loads_inserted_at.94eab1945d' (models/sources.yml) depends on a node named '_dlt_loads' in package '' which was not found
+[0m09:45:01.435629 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_agents_id.3b013aeadd' (models/sources.yml) depends on a node named 'agents' in package '' which was not found
+[0m09:45:01.436673 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_agents__dlt_load_id.e91f46247c' (models/sources.yml) depends on a node named 'agents' in package '' which was not found
+[0m09:45:01.437554 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_agents__dlt_id.6fb2328376' (models/sources.yml) depends on a node named 'agents' in package '' which was not found
+[0m09:45:01.438336 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.unique_agents__dlt_id.7b8c128b74' (models/sources.yml) depends on a node named 'agents' in package '' which was not found
+[0m09:45:01.439079 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_companies_id.b9ba2bee90' (models/sources.yml) depends on a node named 'companies' in package '' which was not found
+[0m09:45:01.439843 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_companies__dlt_load_id.b437b1f86c' (models/sources.yml) depends on a node named 'companies' in package '' which was not found
+[0m09:45:01.440603 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_companies__dlt_id.3c29b936f2' (models/sources.yml) depends on a node named 'companies' in package '' which was not found
+[0m09:45:01.441471 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.unique_companies__dlt_id.94f7901e32' (models/sources.yml) depends on a node named 'companies' in package '' which was not found
+[0m09:45:01.442264 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_contacts_id.bec631d68d' (models/sources.yml) depends on a node named 'contacts' in package '' which was not found
+[0m09:45:01.443055 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_contacts__dlt_load_id.4c610d76ec' (models/sources.yml) depends on a node named 'contacts' in package '' which was not found
+[0m09:45:01.443822 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_contacts__dlt_id.a7a5f53b3c' (models/sources.yml) depends on a node named 'contacts' in package '' which was not found
+[0m09:45:01.444608 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.unique_contacts__dlt_id.17d6460707' (models/sources.yml) depends on a node named 'contacts' in package '' which was not found
+[0m09:45:01.445388 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_groups_id.64518ad9f6' (models/sources.yml) depends on a node named 'groups' in package '' which was not found
+[0m09:45:01.446116 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_groups__dlt_load_id.8995fa3a32' (models/sources.yml) depends on a node named 'groups' in package '' which was not found
+[0m09:45:01.447012 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_groups__dlt_id.54b00911f8' (models/sources.yml) depends on a node named 'groups' in package '' which was not found
+[0m09:45:01.447817 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.unique_groups__dlt_id.16b31e531f' (models/sources.yml) depends on a node named 'groups' in package '' which was not found
+[0m09:45:01.448584 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_roles_id.423f768c3f' (models/sources.yml) depends on a node named 'roles' in package '' which was not found
+[0m09:45:01.449392 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_roles__dlt_load_id.a48a30ca94' (models/sources.yml) depends on a node named 'roles' in package '' which was not found
+[0m09:45:01.450858 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_roles__dlt_id.acc2c026aa' (models/sources.yml) depends on a node named 'roles' in package '' which was not found
+[0m09:45:01.451668 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.unique_roles__dlt_id.0f6d28403c' (models/sources.yml) depends on a node named 'roles' in package '' which was not found
+[0m09:45:01.452438 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_tickets_id.9d2d8f4a59' (models/sources.yml) depends on a node named 'tickets' in package '' which was not found
+[0m09:45:01.453229 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_tickets__dlt_load_id.47c3e53170' (models/sources.yml) depends on a node named 'tickets' in package '' which was not found
+[0m09:45:01.453967 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_tickets__dlt_id.76ae6561c6' (models/sources.yml) depends on a node named 'tickets' in package '' which was not found
+[0m09:45:01.454710 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.unique_tickets__dlt_id.a2fa461112' (models/sources.yml) depends on a node named 'tickets' in package '' which was not found
+[0m09:45:01.455491 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_companies__domains__dlt_root_id.d5ab7135a1' (models/sources.yml) depends on a node named 'companies__domains' in package '' which was not found
+[0m09:45:01.456990 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_companies__domains__dlt_parent_id.0511f1bd9d' (models/sources.yml) depends on a node named 'companies__domains' in package '' which was not found
+[0m09:45:01.457774 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_companies__domains__dlt_list_idx.90dde57ac9' (models/sources.yml) depends on a node named 'companies__domains' in package '' which was not found
+[0m09:45:01.458535 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.not_null_companies__domains__dlt_id.7c355e86a7' (models/sources.yml) depends on a node named 'companies__domains' in package '' which was not found
+[0m09:45:01.459295 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.freshdesk_pipeline.unique_companies__domains__dlt_id.a42d06f780' (models/sources.yml) depends on a node named 'companies__domains' in package '' which was not found
+[0m09:45:01.683128 [info ] [MainThread]: Found 18 models, 9 sources, 479 macros
+[0m09:45:01.686774 [info ] [MainThread]: 
+[0m09:45:01.687548 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m09:45:01.688450 [debug] [MainThread]: Command end result
+[0m09:45:01.743290 [info ] [MainThread]: 
+[0m09:45:01.743945 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:45:01.744412 [info ] [MainThread]: 
+[0m09:45:01.744981 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=0 SKIP=0 TOTAL=0
+[0m09:45:01.746253 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 2.6269524, "process_user_time": 4.599405, "process_kernel_time": 0.291962, "process_mem_max_rss": "249676", "process_in_blocks": "336", "process_out_blocks": "3608"}
+[0m09:45:01.746955 [debug] [MainThread]: Command `cli seed` succeeded at 09:45:01.746838 after 2.63 seconds
+[0m09:45:01.747484 [debug] [MainThread]: Flushing usage events
+
+
+============================== 09:45:04.524816 | d16edd06-ee90-4c22-bcb4-4f7ca99e60d1 ==============================
+[0m09:45:04.524816 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:45:04.528445 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/codespace/.python/current/lib/python3.12/site-packages/dlt/helpers/dbt', 'fail_fast': 'True', 'version_check': 'True', 'log_path': '/workspaces/dlt-freshdesk-schema-mapping/dbt_freshdesk_pipeline/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'True', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m09:45:04.529384 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+
+User config should be moved from the 'config' key in profiles.yml to the 'flags' key in dbt_project.yml.
+[0m09:45:05.147855 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m09:45:05.161075 [debug] [MainThread]: checksum: ce791e2c4dd4719b836612a6894dd3617c68830a344dbf2c146c7bcf853cc43d, vars: {'destination_dataset_name': 'freshdesk_data_transformed',
+ 'source_dataset_name': 'freshdesk_data'}, profile: bigquery, target: , version: 1.8.7
+[0m09:45:05.300036 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:45:05.300658 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:45:05.449810 [info ] [MainThread]: Found 18 models, 9 sources, 479 macros
+[0m09:45:05.452348 [info ] [MainThread]: 
+[0m09:45:05.453116 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:45:05.458142 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_dlthub-sandbox'
+[0m09:45:05.458812 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:45:06.473775 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dlthub-sandbox, now create_dlthub-sandbox_freshdesk_data_transformed)
+[0m09:45:06.474731 [debug] [ThreadPool]: Creating schema "database: "dlthub-sandbox"
+schema: "freshdesk_data_transformed"
+"
+[0m09:45:06.489212 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:45:06.490757 [debug] [ThreadPool]: On create_dlthub-sandbox_freshdesk_data_transformed: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "connection_name": "create_dlthub-sandbox_freshdesk_data_transformed"} */
+create schema if not exists `dlthub-sandbox`.`freshdesk_data_transformed`
+  
+[0m09:45:07.179186 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlthub-sandbox&j=bq:US:4a1fcb06-cd0d-45f8-afdb-dd1157fc0477&page=queryresults
+[0m09:45:08.201500 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dlthub-sandbox_freshdesk_data_transformed, now list_dlthub-sandbox_freshdesk_data_transformed)
+[0m09:45:08.202234 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:45:08.807726 [info ] [MainThread]: Concurrency: 4 threads (target='analytics')
+[0m09:45:08.808607 [info ] [MainThread]: 
+[0m09:45:08.813106 [debug] [Thread-1 (]: Began running node model.freshdesk_pipeline.dlt_active_load_ids
+[0m09:45:08.814280 [info ] [Thread-1 (]: 1 of 18 START sql table model freshdesk_data_transformed.dlt_active_load_ids ... [RUN]
+[0m09:45:08.815305 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dlthub-sandbox_freshdesk_data_transformed, now model.freshdesk_pipeline.dlt_active_load_ids)
+[0m09:45:08.816570 [debug] [Thread-1 (]: Began compiling node model.freshdesk_pipeline.dlt_active_load_ids
+[0m09:45:08.831331 [debug] [Thread-1 (]: Writing injected SQL for node "model.freshdesk_pipeline.dlt_active_load_ids"
+[0m09:45:08.833263 [debug] [Thread-1 (]: Began executing node model.freshdesk_pipeline.dlt_active_load_ids
+[0m09:45:08.879276 [debug] [Thread-1 (]: Writing runtime sql for node "model.freshdesk_pipeline.dlt_active_load_ids"
+[0m09:45:08.880244 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:45:08.881746 [debug] [Thread-1 (]: On model.freshdesk_pipeline.dlt_active_load_ids: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.freshdesk_pipeline.dlt_active_load_ids"} */
+
+  
+    
+
+    create or replace table `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* check if the destination already has a list of processed ids
+if not we will process all loads with status 0 (==success) */
+
+
+SELECT load_id FROM `dlthub-sandbox`.`freshdesk_data`.`_dlt_loads`
+WHERE status = 0
+/* exclude already processed load_ids */
+
+    );
+  
+[0m09:45:09.737907 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlthub-sandbox&j=bq:US:054aee76-a061-4dd8-84c1-3c211482a468&page=queryresults
+[0m09:45:11.968395 [info ] [Thread-1 (]: 1 of 18 OK created sql table model freshdesk_data_transformed.dlt_active_load_ids  [[32mCREATE TABLE (5.0 rows, 139.0 Bytes processed)[0m in 3.15s]
+[0m09:45:11.969499 [debug] [Thread-1 (]: Finished running node model.freshdesk_pipeline.dlt_active_load_ids
+[0m09:45:11.970819 [debug] [Thread-3 (]: Began running node model.freshdesk_pipeline.stg__dlt_loads
+[0m09:45:11.971461 [debug] [Thread-4 (]: Began running node model.freshdesk_pipeline.stg_agents
+[0m09:45:11.972066 [info ] [Thread-3 (]: 2 of 18 START sql table model freshdesk_data_transformed.stg__dlt_loads ........ [RUN]
+[0m09:45:11.972600 [debug] [Thread-2 (]: Began running node model.freshdesk_pipeline.stg_companies
+[0m09:45:11.973163 [debug] [Thread-1 (]: Began running node model.freshdesk_pipeline.stg_contacts
+[0m09:45:11.973894 [info ] [Thread-4 (]: 3 of 18 START sql table model freshdesk_data_transformed.stg_agents ............ [RUN]
+[0m09:45:11.974694 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.freshdesk_pipeline.stg__dlt_loads'
+[0m09:45:11.975395 [info ] [Thread-2 (]: 4 of 18 START sql table model freshdesk_data_transformed.stg_companies ......... [RUN]
+[0m09:45:11.976049 [info ] [Thread-1 (]: 5 of 18 START sql table model freshdesk_data_transformed.stg_contacts .......... [RUN]
+[0m09:45:11.976884 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.freshdesk_pipeline.stg_agents'
+[0m09:45:11.977467 [debug] [Thread-3 (]: Began compiling node model.freshdesk_pipeline.stg__dlt_loads
+[0m09:45:11.978277 [debug] [Thread-2 (]: Acquiring new bigquery connection 'model.freshdesk_pipeline.stg_companies'
+[0m09:45:11.978865 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.freshdesk_pipeline.dlt_active_load_ids, now model.freshdesk_pipeline.stg_contacts)
+[0m09:45:11.979486 [debug] [Thread-4 (]: Began compiling node model.freshdesk_pipeline.stg_agents
+[0m09:45:11.982928 [debug] [Thread-3 (]: Writing injected SQL for node "model.freshdesk_pipeline.stg__dlt_loads"
+[0m09:45:11.983528 [debug] [Thread-2 (]: Began compiling node model.freshdesk_pipeline.stg_companies
+[0m09:45:11.984114 [debug] [Thread-1 (]: Began compiling node model.freshdesk_pipeline.stg_contacts
+[0m09:45:11.987687 [debug] [Thread-4 (]: Writing injected SQL for node "model.freshdesk_pipeline.stg_agents"
+[0m09:45:11.991531 [debug] [Thread-2 (]: Writing injected SQL for node "model.freshdesk_pipeline.stg_companies"
+[0m09:45:11.994927 [debug] [Thread-1 (]: Writing injected SQL for node "model.freshdesk_pipeline.stg_contacts"
+[0m09:45:11.995854 [debug] [Thread-2 (]: Began executing node model.freshdesk_pipeline.stg_companies
+[0m09:45:11.996410 [debug] [Thread-3 (]: Began executing node model.freshdesk_pipeline.stg__dlt_loads
+[0m09:45:11.999379 [debug] [Thread-2 (]: Writing runtime sql for node "model.freshdesk_pipeline.stg_companies"
+[0m09:45:12.000123 [debug] [Thread-4 (]: Began executing node model.freshdesk_pipeline.stg_agents
+[0m09:45:12.002701 [debug] [Thread-3 (]: Writing runtime sql for node "model.freshdesk_pipeline.stg__dlt_loads"
+[0m09:45:12.003379 [debug] [Thread-1 (]: Began executing node model.freshdesk_pipeline.stg_contacts
+[0m09:45:12.004253 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m09:45:12.006806 [debug] [Thread-4 (]: Writing runtime sql for node "model.freshdesk_pipeline.stg_agents"
+[0m09:45:12.007552 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:45:12.010168 [debug] [Thread-1 (]: Writing runtime sql for node "model.freshdesk_pipeline.stg_contacts"
+[0m09:45:12.011741 [debug] [Thread-2 (]: On model.freshdesk_pipeline.stg_companies: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.freshdesk_pipeline.stg_companies"} */
+
+  
+    
+
+    create or replace table `dlthub-sandbox`.`freshdesk_data_transformed`.`stg_companies`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: companies */
+
+
+-- depends_on: `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids`
+
+SELECT
+/* select which columns will be available for table 'companies' */
+    id,
+    name,
+    created_at,
+    updated_at,
+    account_tier,
+    org_company_id,
+    _dlt_load_id,
+    _dlt_id,
+FROM `dlthub-sandbox`.`freshdesk_data`.`companies`
+
+/* we only load table items of the currently active load ids into the staging table */
+WHERE _dlt_load_id IN ( SELECT load_id FROM  `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids` )
+    );
+  
+[0m09:45:12.012547 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m09:45:12.015380 [debug] [Thread-3 (]: On model.freshdesk_pipeline.stg__dlt_loads: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.freshdesk_pipeline.stg__dlt_loads"} */
+
+  
+    
+
+    create or replace table `dlthub-sandbox`.`freshdesk_data_transformed`.`stg__dlt_loads`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: _dlt_loads */
+/* Description: Created by DLT. Tracks completed loads */
+
+
+-- depends_on: `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids`
+
+SELECT
+/* select which columns will be available for table '_dlt_loads' */
+    load_id,
+    schema_name,
+    status,
+    inserted_at,
+    schema_version_hash,
+FROM `dlthub-sandbox`.`freshdesk_data`.`_dlt_loads`
+    );
+  
+[0m09:45:12.041696 [debug] [Thread-4 (]: On model.freshdesk_pipeline.stg_agents: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.freshdesk_pipeline.stg_agents"} */
+
+  
+    
+
+    create or replace table `dlthub-sandbox`.`freshdesk_data_transformed`.`stg_agents`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: agents */
+
+
+-- depends_on: `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids`
+
+SELECT
+/* select which columns will be available for table 'agents' */
+    available,
+    occasional,
+    id,
+    ticket_scope,
+    created_at,
+    updated_at,
+    last_active_at,
+    type,
+    contact__active,
+    contact__email,
+    contact__language,
+    contact__name,
+    contact__phone,
+    contact__time_zone,
+    contact__created_at,
+    contact__updated_at,
+    deactivated,
+    focus_mode,
+    _dlt_load_id,
+    _dlt_id,
+FROM `dlthub-sandbox`.`freshdesk_data`.`agents`
+
+/* we only load table items of the currently active load ids into the staging table */
+WHERE _dlt_load_id IN ( SELECT load_id FROM  `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids` )
+    );
+  
+[0m09:45:12.043118 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:45:12.096732 [debug] [Thread-1 (]: On model.freshdesk_pipeline.stg_contacts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.freshdesk_pipeline.stg_contacts"} */
+
+  
+    
+
+    create or replace table `dlthub-sandbox`.`freshdesk_data_transformed`.`stg_contacts`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: contacts */
+
+
+-- depends_on: `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids`
+
+SELECT
+/* select which columns will be available for table 'contacts' */
+    active,
+    address,
+    email,
+    id,
+    language,
+    name,
+    phone,
+    time_zone,
+    created_at,
+    updated_at,
+    first_name,
+    last_name,
+    visitor_id,
+    org_contact_id,
+    _dlt_load_id,
+    _dlt_id,
+    preferred_source,
+    company_id,
+FROM `dlthub-sandbox`.`freshdesk_data`.`contacts`
+
+/* we only load table items of the currently active load ids into the staging table */
+WHERE _dlt_load_id IN ( SELECT load_id FROM  `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids` )
+    );
+  
+[0m09:45:12.908493 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlthub-sandbox&j=bq:US:07a72535-6cb5-4584-b979-df6a9bee1f77&page=queryresults
+[0m09:45:12.923159 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlthub-sandbox&j=bq:US:080f73c7-c705-416b-a553-c3ed63dd18d8&page=queryresults
+[0m09:45:12.941819 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlthub-sandbox&j=bq:US:21bbac11-a6f0-40db-a71d-afe6b513044f&page=queryresults
+[0m09:45:12.962894 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlthub-sandbox&j=bq:US:77788e59-5c5a-4366-b663-48a3ee3886da&page=queryresults
+[0m09:45:15.115763 [info ] [Thread-4 (]: 3 of 18 OK created sql table model freshdesk_data_transformed.stg_agents ....... [[32mCREATE TABLE (1.0 rows, 281.0 Bytes processed)[0m in 3.14s]
+[0m09:45:15.116707 [debug] [Thread-4 (]: Finished running node model.freshdesk_pipeline.stg_agents
+[0m09:45:15.117352 [debug] [Thread-4 (]: Began running node model.freshdesk_pipeline.stg_groups
+[0m09:45:15.118071 [info ] [Thread-4 (]: 6 of 18 START sql table model freshdesk_data_transformed.stg_groups ............ [RUN]
+[0m09:45:15.118726 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.freshdesk_pipeline.stg_agents, now model.freshdesk_pipeline.stg_groups)
+[0m09:45:15.119292 [debug] [Thread-4 (]: Began compiling node model.freshdesk_pipeline.stg_groups
+[0m09:45:15.123031 [debug] [Thread-4 (]: Writing injected SQL for node "model.freshdesk_pipeline.stg_groups"
+[0m09:45:15.123818 [debug] [Thread-4 (]: Began executing node model.freshdesk_pipeline.stg_groups
+[0m09:45:15.126444 [debug] [Thread-4 (]: Writing runtime sql for node "model.freshdesk_pipeline.stg_groups"
+[0m09:45:15.127186 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m09:45:15.128667 [debug] [Thread-4 (]: On model.freshdesk_pipeline.stg_groups: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.freshdesk_pipeline.stg_groups"} */
+
+  
+    
+
+    create or replace table `dlthub-sandbox`.`freshdesk_data_transformed`.`stg_groups`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: groups */
+
+
+-- depends_on: `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids`
+
+SELECT
+/* select which columns will be available for table 'groups' */
+    id,
+    name,
+    description,
+    business_hour_id,
+    group_type,
+    created_at,
+    updated_at,
+    auto_ticket_assign,
+    agent_availability_status,
+    _dlt_load_id,
+    _dlt_id,
+FROM `dlthub-sandbox`.`freshdesk_data`.`groups`
+
+/* we only load table items of the currently active load ids into the staging table */
+WHERE _dlt_load_id IN ( SELECT load_id FROM  `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids` )
+    );
+  
+[0m09:45:15.156471 [info ] [Thread-2 (]: 4 of 18 OK created sql table model freshdesk_data_transformed.stg_companies .... [[32mCREATE TABLE (1.0 rows, 198.0 Bytes processed)[0m in 3.18s]
+[0m09:45:15.157425 [debug] [Thread-2 (]: Finished running node model.freshdesk_pipeline.stg_companies
+[0m09:45:15.158029 [debug] [Thread-2 (]: Began running node model.freshdesk_pipeline.stg_roles
+[0m09:45:15.158831 [info ] [Thread-2 (]: 7 of 18 START sql table model freshdesk_data_transformed.stg_roles ............. [RUN]
+[0m09:45:15.159431 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.freshdesk_pipeline.stg_companies, now model.freshdesk_pipeline.stg_roles)
+[0m09:45:15.159983 [debug] [Thread-2 (]: Began compiling node model.freshdesk_pipeline.stg_roles
+[0m09:45:15.163598 [debug] [Thread-2 (]: Writing injected SQL for node "model.freshdesk_pipeline.stg_roles"
+[0m09:45:15.164517 [debug] [Thread-2 (]: Began executing node model.freshdesk_pipeline.stg_roles
+[0m09:45:15.167129 [debug] [Thread-2 (]: Writing runtime sql for node "model.freshdesk_pipeline.stg_roles"
+[0m09:45:15.167853 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:45:15.169264 [debug] [Thread-2 (]: On model.freshdesk_pipeline.stg_roles: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.freshdesk_pipeline.stg_roles"} */
+
+  
+    
+
+    create or replace table `dlthub-sandbox`.`freshdesk_data_transformed`.`stg_roles`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: roles */
+
+
+-- depends_on: `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids`
+
+SELECT
+/* select which columns will be available for table 'roles' */
+    id,
+    name,
+    description,
+    default,
+    created_at,
+    updated_at,
+    agent_type,
+    _dlt_load_id,
+    _dlt_id,
+FROM `dlthub-sandbox`.`freshdesk_data`.`roles`
+
+/* we only load table items of the currently active load ids into the staging table */
+WHERE _dlt_load_id IN ( SELECT load_id FROM  `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids` )
+    );
+  
+[0m09:45:15.197282 [info ] [Thread-3 (]: 2 of 18 OK created sql table model freshdesk_data_transformed.stg__dlt_loads ... [[32mCREATE TABLE (5.0 rows, 499.0 Bytes processed)[0m in 3.22s]
+[0m09:45:15.198160 [debug] [Thread-3 (]: Finished running node model.freshdesk_pipeline.stg__dlt_loads
+[0m09:45:15.198802 [debug] [Thread-3 (]: Began running node model.freshdesk_pipeline.stg_tickets
+[0m09:45:15.199574 [info ] [Thread-3 (]: 8 of 18 START sql table model freshdesk_data_transformed.stg_tickets ........... [RUN]
+[0m09:45:15.200162 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.freshdesk_pipeline.stg__dlt_loads, now model.freshdesk_pipeline.stg_tickets)
+[0m09:45:15.200753 [debug] [Thread-3 (]: Began compiling node model.freshdesk_pipeline.stg_tickets
+[0m09:45:15.204341 [debug] [Thread-3 (]: Writing injected SQL for node "model.freshdesk_pipeline.stg_tickets"
+[0m09:45:15.205401 [debug] [Thread-3 (]: Began executing node model.freshdesk_pipeline.stg_tickets
+[0m09:45:15.208036 [debug] [Thread-3 (]: Writing runtime sql for node "model.freshdesk_pipeline.stg_tickets"
+[0m09:45:15.208780 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m09:45:15.210170 [debug] [Thread-3 (]: On model.freshdesk_pipeline.stg_tickets: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.freshdesk_pipeline.stg_tickets"} */
+
+  
+    
+
+    create or replace table `dlthub-sandbox`.`freshdesk_data_transformed`.`stg_tickets`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: tickets */
+
+
+-- depends_on: `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids`
+
+SELECT
+/* select which columns will be available for table 'tickets' */
+    fr_escalated,
+    spam,
+    group_id,
+    priority,
+    requester_id,
+    source,
+    status,
+    subject,
+    product_id,
+    id,
+    type,
+    due_by,
+    fr_due_by,
+    is_escalated,
+    created_at,
+    updated_at,
+    sentiment_score,
+    initial_sentiment_score,
+    nr_escalated,
+    _dlt_load_id,
+    _dlt_id,
+FROM `dlthub-sandbox`.`freshdesk_data`.`tickets`
+
+/* we only load table items of the currently active load ids into the staging table */
+WHERE _dlt_load_id IN ( SELECT load_id FROM  `dlthub-sandbox`.`freshdesk_data_transformed`.`dlt_active_load_ids` )
+    );
+  
+[0m09:45:15.415135 [info ] [Thread-1 (]: 5 of 18 OK created sql table model freshdesk_data_transformed.stg_contacts ..... [[32mCREATE TABLE (15.0 rows, 3.0 KiB processed)[0m in 3.44s]
+[0m09:45:15.416255 [debug] [Thread-1 (]: Finished running node model.freshdesk_pipeline.stg_contacts
+[0m09:45:15.417175 [debug] [Thread-1 (]: Began running node model.freshdesk_pipeline.dim_agents
+[0m09:45:15.418125 [info ] [Thread-1 (]: 9 of 18 START sql incremental model freshdesk_data_transformed.dim_agents ...... [RUN]
+[0m09:45:15.418719 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.freshdesk_pipeline.stg_contacts, now model.freshdesk_pipeline.dim_agents)
+[0m09:45:15.419274 [debug] [Thread-1 (]: Began compiling node model.freshdesk_pipeline.dim_agents
+[0m09:45:15.422629 [debug] [Thread-1 (]: Writing injected SQL for node "model.freshdesk_pipeline.dim_agents"
+[0m09:45:15.423448 [debug] [Thread-1 (]: Began executing node model.freshdesk_pipeline.dim_agents
+[0m09:45:15.465527 [debug] [Thread-1 (]: Writing runtime sql for node "model.freshdesk_pipeline.dim_agents"
+[0m09:45:15.466636 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:45:15.468129 [debug] [Thread-1 (]: On model.freshdesk_pipeline.dim_agents: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.freshdesk_pipeline.dim_agents"} */
+
+  
+    
+
+    create or replace table `dlthub-sandbox`.`freshdesk_data_transformed`.`dim_agents`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: agents */
+
+SELECT
+    t.available,
+    t.occasional,
+    t.id,
+    t.ticket_scope,
+    t.created_at,
+    t.updated_at,
+    t.last_active_at,
+    t.type,
+    t.contact__active,
+    t.contact__email,
+    t.contact__language,
+    t.contact__name,
+    t.contact__phone,
+    t.contact__time_zone,
+    t.contact__created_at,
+    t.contact__updated_at,
+    t.deactivated,
+    t.focus_mode,
+    t._dlt_load_id,
+    t._dlt_id,
+FROM  `dlthub-sandbox`.`freshdesk_data_transformed`.`stg_agents` as t
+    );
+  
+[0m09:45:15.797625 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlthub-sandbox&j=bq:US:6ff1cbcc-c462-4875-b4da-14915491541c&page=queryresults
+[0m09:45:15.798447 [debug] [Thread-2 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected ")" but got keyword DEFAULT at [23:5]; reason: invalidQuery, location: query, message: Syntax error: Expected ")" but got keyword DEFAULT at [23:5]')
+[0m09:45:15.969170 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlthub-sandbox&j=bq:US:ad1765e5-e3ac-4109-be8d-239601761f2a&page=queryresults
+[0m09:45:16.072769 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlthub-sandbox&j=bq:US:fe77c880-ae1c-40f5-9f7d-bedfc68a9626&page=queryresults
+[0m09:45:16.359535 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlthub-sandbox&j=bq:US:f3528ad1-ab78-4488-b7b9-649f0208472c&page=queryresults
+[0m09:45:16.581810 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlthub-sandbox&j=bq:US:7c75adc2-524a-4c2b-9241-35f33e55c204&page=queryresults
+[0m09:45:16.583021 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlthub-sandbox&j=bq:US:7c75adc2-524a-4c2b-9241-35f33e55c204&page=queryresults
+[0m09:45:16.596642 [debug] [Thread-2 (]: Database Error in model stg_roles (models/staging/stg_roles.sql)
+  Syntax error: Expected ")" but got keyword DEFAULT at [23:5]
+  compiled code at target/run/freshdesk_pipeline/models/staging/stg_roles.sql
+[0m09:45:16.597949 [error] [Thread-2 (]: 7 of 18 ERROR creating sql table model freshdesk_data_transformed.stg_roles .... [[31mERROR[0m in 1.44s]
+[0m09:45:16.599211 [debug] [Thread-2 (]: Finished running node model.freshdesk_pipeline.stg_roles
+[0m09:45:16.601087 [debug] [Thread-2 (]: Began running node model.freshdesk_pipeline.dim_companies
+[0m09:45:16.603657 [info ] [Thread-2 (]: 10 of 18 START sql incremental model freshdesk_data_transformed.dim_companies .. [RUN]
+[0m09:45:16.609380 [info ] [MainThread]: [33mThe bigquery adapter does not support query cancellation. Some queries may still be running![0m
+[0m09:45:16.610407 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.freshdesk_pipeline.stg_roles, now model.freshdesk_pipeline.dim_companies)
+[0m09:45:16.611496 [debug] [Thread-2 (]: Began compiling node model.freshdesk_pipeline.dim_companies
+[0m09:45:16.616855 [debug] [Thread-2 (]: Writing injected SQL for node "model.freshdesk_pipeline.dim_companies"
+[0m09:45:16.618210 [debug] [Thread-2 (]: Began executing node model.freshdesk_pipeline.dim_companies
+[0m09:45:16.622000 [debug] [Thread-2 (]: Writing runtime sql for node "model.freshdesk_pipeline.dim_companies"
+[0m09:45:16.622739 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m09:45:16.624199 [debug] [Thread-2 (]: On model.freshdesk_pipeline.dim_companies: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "bigquery", "target_name": "analytics", "node_id": "model.freshdesk_pipeline.dim_companies"} */
+
+  
+    
+
+    create or replace table `dlthub-sandbox`.`freshdesk_data_transformed`.`dim_companies`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      /* Table: companies */
+
+SELECT
+    t.id,
+    t.name,
+    t.created_at,
+    t.updated_at,
+    t.account_tier,
+    t.org_company_id,
+    t._dlt_load_id,
+    t._dlt_id,
+FROM  `dlthub-sandbox`.`freshdesk_data_transformed`.`stg_companies` as t
+    );
+  
+[0m09:45:17.479309 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dlthub-sandbox&j=bq:US:33d4f5bf-fe90-4f18-8813-b8dd239227db&page=queryresults
+[0m09:45:18.418183 [info ] [Thread-4 (]: 6 of 18 OK created sql table model freshdesk_data_transformed.stg_groups ....... [[32mCREATE TABLE (3.0 rows, 538.0 Bytes processed)[0m in 3.30s]
+[0m09:45:18.419844 [debug] [Thread-4 (]: Finished running node model.freshdesk_pipeline.stg_groups
+[0m09:45:18.447296 [info ] [Thread-3 (]: 8 of 18 OK created sql table model freshdesk_data_transformed.stg_tickets ...... [[32mCREATE TABLE (2.0 rows, 435.0 Bytes processed)[0m in 3.25s]
+[0m09:45:18.448470 [debug] [Thread-3 (]: Finished running node model.freshdesk_pipeline.stg_tickets
+[0m09:45:18.536011 [info ] [Thread-1 (]: 9 of 18 OK created sql incremental model freshdesk_data_transformed.dim_agents . [[32mCREATE TABLE (1.0 rows, 182.0 Bytes processed)[0m in 3.12s]
+[0m09:45:18.536889 [debug] [Thread-1 (]: Finished running node model.freshdesk_pipeline.dim_agents
+[0m09:45:19.664549 [info ] [Thread-2 (]: 10 of 18 OK created sql incremental model freshdesk_data_transformed.dim_companies  [[32mCREATE TABLE (1.0 rows, 99.0 Bytes processed)[0m in 3.05s]
+[0m09:45:19.665494 [debug] [Thread-2 (]: Finished running node model.freshdesk_pipeline.dim_companies
+[0m09:45:19.666183 [info ] [MainThread]: 
+[0m09:45:19.666763 [error] [MainThread]:   Database Error in model stg_roles (models/staging/stg_roles.sql)
+  Syntax error: Expected ")" but got keyword DEFAULT at [23:5]
+  compiled code at target/run/freshdesk_pipeline/models/staging/stg_roles.sql
+[0m09:45:19.667644 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:45:19.668106 [debug] [MainThread]: Connection 'model.freshdesk_pipeline.dim_agents' was properly closed.
+[0m09:45:19.668565 [debug] [MainThread]: Connection 'model.freshdesk_pipeline.stg_tickets' was properly closed.
+[0m09:45:19.669053 [debug] [MainThread]: Connection 'model.freshdesk_pipeline.stg_groups' was properly closed.
+[0m09:45:19.669503 [debug] [MainThread]: Connection 'model.freshdesk_pipeline.dim_companies' was properly closed.
+[0m09:45:19.670080 [info ] [MainThread]: 
+[0m09:45:19.670557 [info ] [MainThread]: Finished running 9 table models, 9 incremental models in 0 hours 0 minutes and 14.22 seconds (14.22s).
+[0m09:45:19.672327 [debug] [MainThread]: Command end result
+[0m09:45:19.711686 [info ] [MainThread]: 
+[0m09:45:19.712259 [info ] [MainThread]: [31mCompleted with 13 errors and 0 warnings:[0m
+[0m09:45:19.712761 [info ] [MainThread]: 
+[0m09:45:19.713348 [error] [MainThread]:   Database Error in model stg_roles (models/staging/stg_roles.sql)
+  Syntax error: Expected ")" but got keyword DEFAULT at [23:5]
+  compiled code at target/run/freshdesk_pipeline/models/staging/stg_roles.sql
+[0m09:45:19.713979 [info ] [MainThread]: 
+[0m09:45:19.714575 [error] [MainThread]:   Skipping due to fail_fast
+[0m09:45:19.715144 [info ] [MainThread]: 
+[0m09:45:19.715703 [error] [MainThread]:   Skipping due to fail_fast
+[0m09:45:19.716262 [info ] [MainThread]: 
+[0m09:45:19.716883 [error] [MainThread]:   Skipping due to fail_fast
+[0m09:45:19.717502 [info ] [MainThread]: 
+[0m09:45:19.718051 [error] [MainThread]:   Skipping due to fail_fast
+[0m09:45:19.718600 [info ] [MainThread]: 
+[0m09:45:19.719146 [error] [MainThread]:   Skipping due to fail_fast
+[0m09:45:19.719799 [info ] [MainThread]: 
+[0m09:45:19.720513 [error] [MainThread]:   Skipping due to fail_fast
+[0m09:45:19.721135 [info ] [MainThread]: 
+[0m09:45:19.721937 [error] [MainThread]:   Skipping due to fail_fast
+[0m09:45:19.722558 [info ] [MainThread]: 
+[0m09:45:19.723119 [error] [MainThread]:   Skipping due to fail_fast
+[0m09:45:19.723675 [info ] [MainThread]: 
+[0m09:45:19.724232 [error] [MainThread]:   Skipping due to fail_fast
+[0m09:45:19.724817 [info ] [MainThread]: 
+[0m09:45:19.725361 [error] [MainThread]:   Skipping due to fail_fast
+[0m09:45:19.725978 [info ] [MainThread]: 
+[0m09:45:19.726571 [error] [MainThread]:   Skipping due to fail_fast
+[0m09:45:19.727189 [info ] [MainThread]: 
+[0m09:45:19.727992 [error] [MainThread]:   Skipping due to fail_fast
+[0m09:45:19.728606 [info ] [MainThread]: 
+[0m09:45:19.729150 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=1 SKIP=12 TOTAL=18
+[0m09:45:19.730172 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 15.282242, "process_user_time": 3.734921, "process_kernel_time": 0.346871, "process_mem_max_rss": "248620", "process_in_blocks": "56", "process_out_blocks": "2736", "command_success": false}
+[0m09:45:19.730862 [debug] [MainThread]: Command `cli run` failed at 09:45:19.730750 after 15.28 seconds
+[0m09:45:19.731390 [debug] [MainThread]: Flushing usage events

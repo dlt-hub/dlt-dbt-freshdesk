@@ -1,0 +1,192 @@
+version: 2
+sources:
+  - name: raw_data
+    schema: '{{ var ("source_dataset_name") }}'
+    tables:
+      - name: _dlt_loads
+      - name: agents
+      - name: companies
+      - name: contacts
+      - name: groups
+      - name: roles
+      - name: tickets
+      - name: companies__domains
+  - name: transformed_data
+    schema: '{{ var ("destination_dataset_name") }}'
+    tables:
+      - name: dlt_processed_load_ids
+
+models:
+      - name: dlt_processed_load_ids
+        description: "This table contains all processed load ids for incremental loading"
+      - name: _dlt_loads
+        description: "Created by DLT. Tracks completed loads"
+        columns:
+          - name: load_id
+            tests:
+              - not_null
+          - name: schema_name
+          - name: status
+            tests:
+              - not_null
+          - name: inserted_at
+            tests:
+              - not_null
+          - name: schema_version_hash
+      - name: agents
+        columns:
+          - name: available
+          - name: occasional
+          - name: id
+            tests:
+              - not_null
+          - name: ticket_scope
+          - name: created_at
+          - name: updated_at
+          - name: last_active_at
+          - name: type
+          - name: contact__active
+          - name: contact__email
+          - name: contact__language
+          - name: contact__name
+          - name: contact__phone
+          - name: contact__time_zone
+          - name: contact__created_at
+          - name: contact__updated_at
+          - name: deactivated
+          - name: focus_mode
+          - name: _dlt_load_id
+            tests:
+              - not_null
+          - name: _dlt_id
+            tests:
+              - not_null
+              - unique
+      - name: companies
+        columns:
+          - name: id
+            tests:
+              - not_null
+          - name: name
+          - name: created_at
+          - name: updated_at
+          - name: account_tier
+          - name: org_company_id
+          - name: _dlt_load_id
+            tests:
+              - not_null
+          - name: _dlt_id
+            tests:
+              - not_null
+              - unique
+      - name: contacts
+        columns:
+          - name: active
+          - name: address
+          - name: email
+          - name: id
+            tests:
+              - not_null
+          - name: language
+          - name: name
+          - name: phone
+          - name: time_zone
+          - name: created_at
+          - name: updated_at
+          - name: first_name
+          - name: last_name
+          - name: visitor_id
+          - name: org_contact_id
+          - name: _dlt_load_id
+            tests:
+              - not_null
+          - name: _dlt_id
+            tests:
+              - not_null
+              - unique
+          - name: preferred_source
+          - name: company_id
+      - name: groups
+        columns:
+          - name: id
+            tests:
+              - not_null
+          - name: name
+          - name: description
+          - name: business_hour_id
+          - name: group_type
+          - name: created_at
+          - name: updated_at
+          - name: auto_ticket_assign
+          - name: agent_availability_status
+          - name: _dlt_load_id
+            tests:
+              - not_null
+          - name: _dlt_id
+            tests:
+              - not_null
+              - unique
+      - name: roles
+        columns:
+          - name: id
+            tests:
+              - not_null
+          - name: name
+          - name: description
+          - name: default
+          - name: created_at
+          - name: updated_at
+          - name: agent_type
+          - name: _dlt_load_id
+            tests:
+              - not_null
+          - name: _dlt_id
+            tests:
+              - not_null
+              - unique
+      - name: tickets
+        columns:
+          - name: fr_escalated
+          - name: spam
+          - name: group_id
+          - name: priority
+          - name: requester_id
+          - name: source
+          - name: status
+          - name: subject
+          - name: product_id
+          - name: id
+            tests:
+              - not_null
+          - name: type
+          - name: due_by
+          - name: fr_due_by
+          - name: is_escalated
+          - name: created_at
+          - name: updated_at
+          - name: sentiment_score
+          - name: initial_sentiment_score
+          - name: nr_escalated
+          - name: _dlt_load_id
+            tests:
+              - not_null
+          - name: _dlt_id
+            tests:
+              - not_null
+              - unique
+      - name: companies__domains
+        columns:
+          - name: value
+          - name: _dlt_root_id
+            tests:
+              - not_null
+          - name: _dlt_parent_id
+            tests:
+              - not_null
+          - name: _dlt_list_idx
+            tests:
+              - not_null
+          - name: _dlt_id
+            tests:
+              - not_null
+              - unique
