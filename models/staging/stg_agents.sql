@@ -21,7 +21,6 @@ SELECT
     contact__email,
     contact__language,
     contact__name,
-    contact__phone,
     contact__time_zone,
     contact__created_at,
     contact__updated_at,

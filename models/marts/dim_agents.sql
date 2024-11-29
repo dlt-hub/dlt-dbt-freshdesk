@@ -17,7 +17,6 @@ SELECT
     t.contact__email,
     t.contact__language,
     t.contact__name,
-    t.contact__phone,
     t.contact__time_zone,
     t.contact__created_at,
     t.contact__updated_at,

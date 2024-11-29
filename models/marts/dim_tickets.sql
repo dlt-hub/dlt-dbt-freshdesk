@@ -1,0 +1,29 @@
+/* Table: tickets */
+{{
+    config(
+        materialized='incremental'
+    )
+}}
+SELECT
+    t.fr_escalated,
+    t.spam,
+    t.group_id,
+    t.priority,
+    t.requester_id,
+    t.source,
+    t.status,
+    t.subject,
+    t.product_id,
+    t.id,
+    t.type,
+    t.due_by,
+    t.fr_due_by,
+    t.is_escalated,
+    t.created_at,
+    t.updated_at,
+    t.sentiment_score,
+    t.initial_sentiment_score,
+    t.nr_escalated,
+    t._dlt_load_id,
+    t._dlt_id,
+FROM  {{ ref('stg_tickets') }} as t

@@ -100,12 +100,12 @@ for data model which can be further modified as required.
 
 1. The schema of data modelled above using dlt-dbt-generator:
     
-   ![picture](https://storage.googleapis.com/dlt-blog-images/freshdesk-dlt-dbt.png)
+   ![picture](https://storage.googleapis.com/dlt-blog-images/freshdesk_dlt_dbt_dim_model.png)
 
    > Please note that this is a starting template for your data model and is not the final product. It is advised to customize the
    > data model as per your needs.
 
-   Here's the link to the DB diagram: [link](https://dbdiagram.io/d/freshdesk-dlt-dbt-67076a6b97a66db9a37e0e94).
+   Here's the link to the DB diagram: [link](https://dbdiagram.io/d/freshdesk_dlt_dbt_v1-5-6749abb6e9daa85aca228883).
 
 #### Optional: Advanced Usage (Generator and Licensing)
 

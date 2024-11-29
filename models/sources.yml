@@ -49,7 +49,6 @@ models:
           - name: contact__email
           - name: contact__language
           - name: contact__name
-          - name: contact__phone
           - name: contact__time_zone
           - name: contact__created_at
           - name: contact__updated_at
